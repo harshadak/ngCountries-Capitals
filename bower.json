@@ -1,0 +1,17 @@
+{
+  "name": "countries-and-capitals",
+  "homepage": "https://github.com/harshadak/ngCountries-Capitals",
+  "authors": [
+    "Harshada Kurahatti <harshada.kurahatti@gmail.com>"
+  ],
+  "description": "Countries and Capitals",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0"
+  }
+}
