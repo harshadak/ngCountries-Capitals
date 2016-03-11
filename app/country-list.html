@@ -1,0 +1,33 @@
+<div class="table">
+    <div class="table-heading">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Country Code</th>
+                    <th>Capital</th>
+                    <th>Area in km<sup>2</sup></th>
+                    <th>Population</th>
+                    <th>Continent</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="table-details">
+        <table>
+            <tbody>
+                <tr ng-repeat="country in countries | orderBy:countryName">
+                    <td><a href="#/countries/{{ country.countryName }}">{{ country.countryName }}</a></td>
+                    <td>{{ country.countryCode }}</td>
+                    <td>{{ country.capital }}</td>
+                    <td>{{ country.areaInSqKm | number }}</td>
+                    <td>{{ country.population | number }}</td>
+                    <td>{{ country.continent }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<a href="#/home">
+    <button>Home</button>
+</a>
