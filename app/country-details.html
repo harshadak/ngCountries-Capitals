@@ -1,7 +1,6 @@
-<div class="details">
-    <div class="country-container">
-        <h2 class="country-name">{{ country.countryName }}</h2>
-    </div>
+<div class="country-details">
+    <h2>{{ country.countryName }}</h2>
+
     <div class="details-container">
         <dl>
             <dt>Population of Country: </dt>
@@ -22,8 +21,8 @@
             <dt>{{neighbors.length}} neighbors: </dt>
             <br>
             <br>
-            <dd id="neighbors-list-dd">
-                <ul id="neighbors-list" ng-repeat="neighbor in neighbors">
+            <dd class="neighbors-list-dd">
+                <ul class="neighbors-list" ng-repeat="neighbor in neighbors">
                     <li><a ng-href="#/countries/{{ neighbor.countryCode | uppercase }}">{{ neighbor.countryName }}</a></li>
                 </ul>
             </dd>
@@ -42,11 +41,10 @@
 
     <div class="nav-buttons">
         <a href="#/home">
-            <button>Back to Home</button>
+            <button class="button">Back to Home</button>
         </a>
         <a href="#/countries">
-            <button>Back to Countries</button>
+            <button class="button">Back to Countries</button>
         </a>
     </div>
-
 </div>

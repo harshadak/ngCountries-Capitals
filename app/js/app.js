@@ -7,7 +7,7 @@ angular.module('myApp', ['APIServices', 'DataServices', 'ngRoute'])
                 templateUrl: './country-list.html',
                 controller: 'countryListCtrl'
             })
-            .when('/countries/:countryName', {
+            .when('/countries/:countryCode', {
                 templateUrl: './country-details.html',
                 controller: 'countryDetailsCtrl'
             })

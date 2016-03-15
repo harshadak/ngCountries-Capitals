@@ -15,18 +15,22 @@ body {
 /* Header styles */
 
 header {
+    position: relative;
+    width: 100%;
     height: 7rem;
     padding-top: 1rem;
     margin-bottom: 2rem;
 }
 header h1 {
     font-size: 3.5rem;
-    font-weight: 600;
+    font-weight: bolder;
+    text-shadow: 2px 3px 3px #999;
 }
 
 /* Container styles */
 
 .container {
+    position: relative;
     width: 75%;
     margin: 0 auto;
 }
@@ -34,10 +38,11 @@ header h1 {
 /* Homepage styles */
 
 .home-container {
+    width: 60rem;
     padding: 1.25rem;
     border: 1px solid #ddd;
-    /* Temporary */
     border-radius: 5px;
+    box-shadow: 0 2px 3px #999;
 }
 .home-container h2 {
     font-size: 1.6rem;
@@ -53,6 +58,9 @@ header h1 {
 
 /* Common button styles */
 
+a {
+    text-decoration: none;
+}
 .button {
     border-radius: 3px;
     font-size: 1rem;
@@ -68,14 +76,17 @@ header h1 {
 /* Country list styles */
 
 .countries-table {
+    width: 60rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 3px #999;
 }
 .table-heading {
-    width: 100%;
+    position: relative;
     border-bottom: 1px solid #ddd;
     margin: 0 auto;
+    padding-top: 0.5rem;
     height: 3rem;
     line-height: 2.6rem;
 }
@@ -86,7 +97,7 @@ header h1 {
     padding-left: 1.55rem;
 }
 .table-details {
-    width: 100%;
+    position: relative;
     max-height: 470px;
     overflow: scroll;
     table-layout: fixed;
@@ -101,5 +112,96 @@ header h1 {
     /* doesn't seem to apply the margin */
     /*border-bottom: 1px solid #ddd;*/
 }
+.table-details td a {
+    color: #000;
+    font-weight: 800;
+}
+.table-details td a:hover {
+    color: #848484;
+}
 
 /* Country details styles */
+
+.country-details {
+    /*
+    border-radius: 5px;
+    margin-bottom: 1rem;*/
+    position: relative;
+    width: 48rem;
+    max-height: 40rem;
+    overflow: auto;
+    margin: 2rem auto;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 3px #999;
+}
+.country-details h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.details-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin-left: 2rem;
+}
+.details-container dl {
+    width: 100%;
+    padding-top: 1rem;
+}
+.details-container dt {
+    float: left;
+    font-weight: bold;
+}
+.details-container dd {
+    padding: 0 0 1rem 0;
+}
+.neighbors-list-dd {
+    margin: 0;
+    text-indent: 0;
+}
+.neighbors-list {
+    display: inline-block;
+    text-align: left;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: .8rem;
+}
+.neighbors-list li a {
+    color: #7401DF;
+}
+.neighbors-list li a:hover {
+    font-weight: bolder;
+}
+.image-container {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+.flag-box,
+.map-box {
+    padding: 1rem 0;
+    position: relative;
+}
+.flag-image {
+    width: 150px;
+    height: 100px;
+}
+.map-image {
+    width: 150px;
+    height: auto;
+}
+.nav-buttons {
+    position: relative;
+    clear: both;
+    width: 100%;
+}
+.nav-buttons button {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}

@@ -34,7 +34,7 @@ angular.module('myApp')
     }])
     .controller('countryDetailsCtrl', ['$scope', '$route', 'DataFactory', function ($scope, $route, DataFactory) {
         DataFactory.getCountry($route.current.params.countryCode).then(function (result) {
-            $scope.country = result;
+            $scope.country = result[0];
             console.log($scope.country);
         });
 
