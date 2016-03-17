@@ -1,0 +1,131 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'karma-safari-launcher',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /Users/harshada/Desktop/Thinkful/Projects/countries-and-capitals/package.json
+5 verbose installManyTop reading scoped package data from /Users/harshada/Desktop/Thinkful/Projects/countries-and-capitals/node_modules/bower/package.json
+6 verbose installManyTop reading scoped package data from /Users/harshada/Desktop/Thinkful/Projects/countries-and-capitals/node_modules/jasmine-core/package.json
+7 verbose installManyTop reading scoped package data from /Users/harshada/Desktop/Thinkful/Projects/countries-and-capitals/node_modules/karma/package.json
+8 verbose installManyTop reading scoped package data from /Users/harshada/Desktop/Thinkful/Projects/countries-and-capitals/node_modules/karma-jasmine/package.json
+9 verbose readDependencies loading dependencies from /Users/harshada/Desktop/Thinkful/Projects/countries-and-capitals/package.json
+10 silly cache add args [ 'karma-safari-launcher', null ]
+11 verbose cache add spec karma-safari-launcher
+12 silly cache add parsed spec { raw: 'karma-safari-launcher',
+12 silly cache add   scope: null,
+12 silly cache add   name: 'karma-safari-launcher',
+12 silly cache add   rawSpec: '',
+12 silly cache add   spec: '*',
+12 silly cache add   type: 'range' }
+13 silly addNamed karma-safari-launcher@*
+14 verbose addNamed "*" is a valid semver range for karma-safari-launcher
+15 silly addNameRange { name: 'karma-safari-launcher', range: '*', hasData: false }
+16 silly mapToRegistry name karma-safari-launcher
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/karma-safari-launcher
+20 verbose addNameRange registry:https://registry.npmjs.org/karma-safari-launcher not in flight; fetching
+21 verbose request uri https://registry.npmjs.org/karma-safari-launcher
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 12:15:15
+24 verbose request id 15248cc8e9fafdd6
+25 http request GET https://registry.npmjs.org/karma-safari-launcher
+26 http 200 https://registry.npmjs.org/karma-safari-launcher
+27 silly get cb [ 200,
+27 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly get     etag: '"9BJASHKK9BTOGVFCFRAS9IQ7E"',
+27 silly get     'content-type': 'application/json',
+27 silly get     'cache-control': 'max-age=300',
+27 silly get     'content-length': '7034',
+27 silly get     'accept-ranges': 'bytes',
+27 silly get     date: 'Wed, 16 Mar 2016 19:15:15 GMT',
+27 silly get     via: '1.1 varnish',
+27 silly get     age: '242',
+27 silly get     connection: 'keep-alive',
+27 silly get     'x-served-by': 'cache-sjc3124-SJC',
+27 silly get     'x-cache': 'HIT',
+27 silly get     'x-cache-hits': '2',
+27 silly get     'x-timer': 'S1458155715.681281,VS0,VE0',
+27 silly get     vary: 'Accept' } ]
+28 verbose get saving karma-safari-launcher to /Users/harshada/.npm/registry.npmjs.org/karma-safari-launcher/.cache.json
+29 silly addNameRange number 2 { name: 'karma-safari-launcher', range: '*', hasData: true }
+30 silly addNameRange versions [ 'karma-safari-launcher',
+30 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.1.0', '0.1.1' ] ]
+31 silly addNamed karma-safari-launcher@0.1.1
+32 verbose addNamed "0.1.1" is a plain semver version for karma-safari-launcher
+33 silly mapToRegistry name karma-safari-launcher
+34 silly mapToRegistry using default registry
+35 silly mapToRegistry registry https://registry.npmjs.org/
+36 silly mapToRegistry uri https://registry.npmjs.org/karma-safari-launcher
+37 verbose addRemoteTarball https://registry.npmjs.org/karma-safari-launcher/-/karma-safari-launcher-0.1.1.tgz not in flight; adding
+38 verbose addRemoteTarball [ 'https://registry.npmjs.org/karma-safari-launcher/-/karma-safari-launcher-0.1.1.tgz',
+38 verbose addRemoteTarball   'a6380accab60a583fdd624f41b9a3f10fdf41008' ]
+39 info retry fetch attempt 1 at 12:15:15
+40 info attempt registry request try #1 at 12:15:15
+41 http fetch GET https://registry.npmjs.org/karma-safari-launcher/-/karma-safari-launcher-0.1.1.tgz
+42 http fetch 200 https://registry.npmjs.org/karma-safari-launcher/-/karma-safari-launcher-0.1.1.tgz
+43 silly fetchAndShaCheck shasum a6380accab60a583fdd624f41b9a3f10fdf41008
+44 verbose addTmpTarball /var/folders/40/t3qgc3n95d5fy75ggj53r6d00000gp/T/npm-57006-9a4faa2e/registry.npmjs.org/karma-safari-launcher/-/karma-safari-launcher-0.1.1.tgz not in flight; adding
+45 verbose addTmpTarball already have metadata; skipping unpack for karma-safari-launcher@0.1.1
+46 silly cache afterAdd karma-safari-launcher@0.1.1
+47 verbose afterAdd /Users/harshada/.npm/karma-safari-launcher/0.1.1/package/package.json not in flight; writing
+48 verbose afterAdd /Users/harshada/.npm/karma-safari-launcher/0.1.1/package/package.json written
+49 silly install resolved [ { name: 'karma-safari-launcher',
+49 silly install resolved     version: '0.1.1',
+49 silly install resolved     description: 'A Karma plugin. Launcher for Safari.',
+49 silly install resolved     main: 'index.js',
+49 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+49 silly install resolved     repository:
+49 silly install resolved      { type: 'git',
+49 silly install resolved        url: 'git://github.com/karma-runner/karma-safari-launcher.git' },
+49 silly install resolved     keywords: [ 'karma-plugin', 'karma-launcher', 'safari' ],
+49 silly install resolved     author: { name: 'Vojta Jina', email: 'vojta.jina@gmail.com' },
+49 silly install resolved     dependencies: {},
+49 silly install resolved     peerDependencies: { karma: '>=0.9' },
+49 silly install resolved     license: 'MIT',
+49 silly install resolved     devDependencies:
+49 silly install resolved      { 'grunt-npm': '0.0.2',
+49 silly install resolved        grunt: '~0.4.1',
+49 silly install resolved        'grunt-bump': '0.0.7',
+49 silly install resolved        'grunt-auto-release': '0.0.2' },
+49 silly install resolved     contributors: [ [Object], [Object] ],
+49 silly install resolved     _id: 'karma-safari-launcher@0.1.1',
+49 silly install resolved     dist:
+49 silly install resolved      { shasum: 'a6380accab60a583fdd624f41b9a3f10fdf41008',
+49 silly install resolved        tarball: 'http://registry.npmjs.org/karma-safari-launcher/-/karma-safari-launcher-0.1.1.tgz' },
+49 silly install resolved     _npmVersion: '1.1.65',
+49 silly install resolved     _npmUser: { name: 'vojtajina', email: 'vojta.jina@gmail.com' },
+49 silly install resolved     maintainers: [ [Object], [Object] ],
+49 silly install resolved     directories: {},
+49 silly install resolved     _shasum: 'a6380accab60a583fdd624f41b9a3f10fdf41008',
+49 silly install resolved     _resolved: 'https://registry.npmjs.org/karma-safari-launcher/-/karma-safari-launcher-0.1.1.tgz',
+49 silly install resolved     _from: 'karma-safari-launcher@*' } ]
+50 info install karma-safari-launcher@0.1.1 into /Users/harshada/Desktop/Thinkful/Projects/countries-and-capitals
+51 info installOne karma-safari-launcher@0.1.1
+52 verbose installOne of karma-safari-launcher to /Users/harshada/Desktop/Thinkful/Projects/countries-and-capitals not in flight; installing
+53 warn locking Error: EACCES, open '/Users/harshada/.npm/_locks/karma-safari-launcher-575d77d2196f3995.lock'
+53 warn locking     at Error (native)
+53 warn locking  /Users/harshada/.npm/_locks/karma-safari-launcher-575d77d2196f3995.lock failed { [Error: EACCES, open '/Users/harshada/.npm/_locks/karma-safari-launcher-575d77d2196f3995.lock']
+53 warn locking   errno: -13,
+53 warn locking   code: 'EACCES',
+53 warn locking   path: '/Users/harshada/.npm/_locks/karma-safari-launcher-575d77d2196f3995.lock' }
+54 verbose stack Error: Attempt to unlock /Users/harshada/Desktop/Thinkful/Projects/countries-and-capitals/node_modules/karma-safari-launcher, which hasn't been locked
+54 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+54 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:1017:5)
+54 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:1021:20
+54 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+54 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+54 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+54 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+55 verbose cwd /Users/harshada/Desktop/Thinkful/Projects/countries-and-capitals
+56 error Darwin 14.5.0
+57 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "karma-safari-launcher" "--save-dev"
+58 error node v0.12.7
+59 error npm  v2.11.3
+60 error Attempt to unlock /Users/harshada/Desktop/Thinkful/Projects/countries-and-capitals/node_modules/karma-safari-launcher, which hasn't been locked
+61 error If you need help, you may report this error at:
+61 error     <https://github.com/npm/npm/issues>
+62 verbose exit [ 1, true ]

@@ -14,12 +14,11 @@ angular.module('myApp')
         });
 
         $scope.showDetail = function (country) {
-            $location.path('/countries/' + country.countryName);
+            $location.path('/countries/' + country.countryCode);
         };
 
 
-        $scope.predicate = 'countryName';
-        $scope.reverse = false;
+        $scope.predicate = 'countryName'; // Could be temporary
 
         angular.forEach($scope.countries, function (country) {
             country.areaInSqKm = parseFloat(country.areaInSqKm);
