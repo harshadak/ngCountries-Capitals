@@ -15,7 +15,15 @@ module.exports = function (config) {
 
         // list of files / patterns to load in the browser
         files: [
-      'appSpec.js'
+            // Load files from bower components and CDN
+            /*'bower_components/angular/angular.js',
+            'bower_components/angular-route/angular-route.js',*/
+            'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-route.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-mocks.js',
+            // Program files
+            'app/js/*.js',
+            'tests/*.js'
     ],
 
 
@@ -54,8 +62,12 @@ module.exports = function (config) {
 
         // start these browsers
         // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-        browsers: ['Chrome', 'Firefox', 'Safari'],
+        browsers: ['Chrome'],
 
+        plugins: [
+            'karma-chrome-launcher',
+            'karma-jasmine'
+        ],
 
         // Continuous Integration mode
         // if true, Karma captures browsers, runs the tests and exits

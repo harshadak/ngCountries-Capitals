@@ -14,7 +14,7 @@ angular.module('APIServices', [])
                     username: username
                 };
 
-                $http({
+                $http.get({
                     method: 'JSONP',
                     url: url,
                     params: request,
@@ -47,7 +47,7 @@ angular.module('APIServices', [])
                     username: username
                 };
 
-                $http({
+                $http.get({
                     method: 'JSONP',
                     url: url,
                     params: request,
@@ -75,7 +75,7 @@ angular.module('APIServices', [])
                     username: username
                 };
 
-                $http({
+                $http.get({
                     method: 'JSONP',
                     url: url,
                     params: request,
@@ -105,7 +105,7 @@ angular.module('APIServices', [])
                     username: username
                 };
 
-                $http({
+                $http.get({
                     method: 'JSONP',
                     url: url,
                     params: request,
